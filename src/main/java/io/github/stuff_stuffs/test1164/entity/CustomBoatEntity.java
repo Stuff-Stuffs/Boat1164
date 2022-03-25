@@ -1,5 +1,6 @@
 package io.github.stuff_stuffs.test1164.entity;
 
+import io.github.stuff_stuffs.test1164.network.SpawnCustomBoatEntityPacketSender;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.vehicle.BoatEntity;
 import net.minecraft.network.Packet;
@@ -12,6 +13,6 @@ public class CustomBoatEntity extends BoatEntity {
 
     @Override
     public Packet<?> createSpawnPacket() {
-        return super.createSpawnPacket();
+        return SpawnCustomBoatEntityPacketSender.createSpawnPacket(this);
     }
 }
