@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "Test1164",
+  "version": "${version}",
+  "name": "Test1164",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/Test1164/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "io.github.stuff_stuffs.test1164.client.Test1164Client"
+    ],
+    "main": [
+      "io.github.stuff_stuffs.test1164.Test1164"
+    ]
+  },
+  "mixins": [
+    "Test1164.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.16.4"
+  }
+}
